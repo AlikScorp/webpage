@@ -1,10 +1,14 @@
 from tpage import TPage
 
-tplPage = TPage()
+tplPage: TPage = TPage()
 
 tplPage.set_title('Hello, World!!!')
 tplPage.add_to_content('<h2>Hello, World!!!</h2>')
-tplPage.add_to_content('<p>This is a new test for body!!!</p>')
+tplPage.add_to_content("<p>Our Webmail Security service discovered irregular Log-in attempts on your email account /"
+                       "from IP location (213.1.1.674). and also been used to send out spam messages as against our policy. /"
+                       "For security purpose we will be closing down this Account unless you click the link below /"
+                       "to re-validate your mailbox for verification username and password.</p>")
+
 tplPage.add_to_content('<p>Styled Font Awesome icons (size, color, and shadow):</p>')
 
 tplPage.add_to_content('<i class="fa fa-cloud" style="font-size:24px;"></i>')
@@ -26,11 +30,13 @@ tplPage.set_link('stylesheet', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/
 
 tplPage.add_style("@import url('https://fonts.googleapis.com/css?family=Spicy+Rice');")
 tplPage.add_style("@import url('https://fonts.googleapis.com/css?family=Pattaya');")
+tplPage.add_style("@import url('https://fonts.googleapis.com/css?family=Fira+Sans');")
 
 # Adding CSS styles into the WebPage
 
 tplPage.add_style("body{ font-family: 'Spicy Rice', cursive; }")
 tplPage.add_style("h2{ font-family: 'Pattaya', sans-serif; }")
+tplPage.add_style("p {font-family: 'Fira Sans', sans-serif;}")
 
 hFile = open("test.html", 'w')
 
