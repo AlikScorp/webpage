@@ -21,6 +21,8 @@ tplPage.add_to_content(
 # tplPage.set_meta('http-equiv', 'refresh', '30')
 tplPage.set_link('stylesheet', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
 tplPage.set_link('stylesheet', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css')
+tplPage.add_style("@import url('https://fonts.googleapis.com/css?family=Spicy+Rice');")
+tplPage.add_style("body{ font-family: 'Spicy Rice', cursive; }")
 
 hFile = open("test.html", 'w')
 
