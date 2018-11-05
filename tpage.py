@@ -12,7 +12,7 @@ class TPage:
         self.set_meta('name', "viewport", "width=device-width, initial-scale=1")
 
     def header(self):
-        s = '<!DOCTYPE html><html lang="en">'
+        s = '<!DOCTYPE html>'
         return s
 
     def head(self):
@@ -34,7 +34,7 @@ class TPage:
         return 1
 
     def render(self):
-        return self.header()+self.head()+self.get_body()+'</html>'
+        return self.header()+'<html lang="en">'+self.head()+self.get_body()+'</html>'
 
     def get_body(self):
         return '<body>'+self.get_content()+'</body>'
