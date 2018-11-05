@@ -23,6 +23,9 @@ tplPage.add_to_content(
 # tplPage.set_meta('name', 'description', 'Testing of TPage class')
 # tplPage.set_meta('name', 'keywords', 'HTML, CSS, XML, XHTML, JavaScript, Python')
 # tplPage.set_meta('http-equiv', 'refresh', '30')
+
+# Adding external CSS files for Bootstrap and Awesome classes
+
 tplPage.set_link('stylesheet', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
 tplPage.set_link('stylesheet', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css')
 
