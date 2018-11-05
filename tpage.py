@@ -5,6 +5,7 @@ class TPage:
     aContent = []
     aMeta = []
     aLink = []
+    aStyle = []
 
     def __init__(self):
         self.set_meta("charset", 0, "utf-8")
@@ -15,11 +16,21 @@ class TPage:
         return s
 
     def head(self):
-        s = '<head>'+self.cTitle+self.get_meta()+self.get_link()+'</head>'
+        cStyle = ''
+        if len(self.aStyle) > 0:
+            for i in self.aStyle:
+                cStyle += i
+            cStyle = '<style>'+cStyle+'</style>'
+
+        s = '<head>'+self.cTitle+self.get_meta()+self.get_link()+cStyle+'</head>'
         return s
 
     def set_title(self, title):
         self.cTitle = '<title>'+title+'</title>'
+        return 1
+
+    def add_style(self, cStyle):
+        self.aStyle.extend(cStyle)
         return 1
 
     def render(self):
