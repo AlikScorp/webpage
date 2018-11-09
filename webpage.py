@@ -9,6 +9,7 @@ tplPage.add_to_content('<div class="jumbotron jumbotron-fluid"><div class="conta
 tplPage.add_to_content('<div class="container">')
 tplPage.add_to_content('<div class="row"><div class="col-lg-6">')
 tplPage.add_to_content('<h2>Hello, World!!!</h2>')
+tplPage.add_to_content('<h3>Another version of hello</h3>')
 tplPage.add_to_content("<p>Our Webmail Security service discovered irregular Log-in attempts on your email account "
                        "from IP location (213.1.1.674) and also been used to send out spam messages as against our policy."
                        "For security purpose we will be closing down this Account unless you click the link below "
