@@ -49,9 +49,8 @@ tplPage.add_style("body{ font-family: 'Spicy Rice', cursive; }")
 tplPage.add_style("h2{ font-family: 'Pattaya', sans-serif; }")
 tplPage.add_style("p {font-family: 'Fira Sans', sans-serif;}")
 
-hFile = open("test.html", 'w')
-
-if hFile.write(tplPage.render()):
-    print('All changes successful applied!!!')
-else:
-    print('Failed to write changes into the file!')
+with open("test.html", 'w') as hFile:
+    if hFile.write(tplPage.render()):
+        print('All changes successful applied!!!')
+    else:
+        print('Failed to write changes into the file!')
