@@ -1,4 +1,4 @@
-from tpage import TPage
+from sketchbook.webpage.tpage import TPage
 
 tplPage: TPage = TPage()
 
