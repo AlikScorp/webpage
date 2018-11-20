@@ -41,16 +41,18 @@ tplPage.set_link('stylesheet', 'bootstrap.min.css')
 
 tplPage.add_style("@import url('https://fonts.googleapis.com/css?family=Spicy+Rice');")
 tplPage.add_style("@import url('https://fonts.googleapis.com/css?family=Pattaya');")
-tplPage.add_style("@import url('https://fonts.googleapis.com/css?family=Fira+Sans');")
+tplPage.add_style("@import url('https://fonts.googleapis.com/css?family=Allerta+Stencil');")
 
 # Adding CSS styles into the WebPage
 
 tplPage.add_style("body{ font-family: 'Spicy Rice', cursive; }")
 tplPage.add_style("h2{ font-family: 'Pattaya', sans-serif; }")
-tplPage.add_style("p {font-family: 'Fira Sans', sans-serif;}")
+tplPage.add_style("p {font-family: 'Allerta Stencil', sans-serif;}")
 
 with open("test.html", 'w') as hFile:
     if hFile.write(tplPage.render()):
         print('All changes successful applied!!!')
     else:
         print('Failed to write changes into the file!')
+
+
